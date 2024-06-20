@@ -1,13 +1,14 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import AnimatedSection from './utils/AnimatedSection';
 
 const MainSection: React.FC = () => {
     return (
         <div className="relative">
-            <section className="container mx-auto flex flex-col lg:flex-row items-center justify-between py-24 relative z-10">
-                <div className="max-w-xl mb-8 lg:mb-32 lg:w-1/2 mr-8">
-                    <h1 className="text-display-2xl font-bold text-black leading-tight">
+            <section className="container mx-auto flex flex-col lg:flex-row items-center justify-between py-24 relative z-10 px-4 sm:px-6">
+                <div className="max-w-xl mb-8 lg:mb-32 lg:w-1/2 lg:mr-8">
+                <h1 className="text-3xl sm:text-display-2xl font-bold text-black leading-tight">
                         Event Registration Reimagined
                     </h1>
                     <p className="mt-4 text-body-lg text-neutral-700">
@@ -31,9 +32,11 @@ const MainSection: React.FC = () => {
                     </div>
                 </div>
             </section>
-            <div className="container mx-auto">
-                <div className="divider"></div> {/* Divider */}
-            </div>
+            <AnimatedSection>
+                <div className="container mx-auto">
+                    <div className="divider"></div>
+                </div>
+            </AnimatedSection>
         </div>
     );
 };

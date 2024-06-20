@@ -21,7 +21,7 @@ const IntegrationsSection: React.FC = () => {
                 <div className="absolute top-[-40%] left-[5%] w-[370px] h-[370px] bg-cyan-100 rounded-full opacity-100 
                                 xl:top-[-85%] xl:left-[4.2%] xl:w-[700px] xl:h-[700px]
                                 lg:top-[-50%] lg:left-[2%] lg:w-[500px] lg:h-[500px] 
-                                md:top-[-40%] md:left-[2%] md:w-[400px] md:h-[400px] 
+                                md:top-[-50%] md:left-[13%] md:w-[600px] md:h-[600px] 
                                 sm:top-[-30%] sm:left-[2%] sm:w-[300px] sm:h-[300px]"
                 >
                 </div>
@@ -32,17 +32,17 @@ const IntegrationsSection: React.FC = () => {
                             Connect RegiM with your most favorite sales and marketing tools
                         </p>
                     </div>
-                    <div className="lg:w-1/2 flex flex-col items-center mt-8 lg:mt-0">
+                    <div className="w-full lg:w-1/2 flex flex-col items-center mt-8 lg:mt-0">
                         <div className="grid grid-cols-4 gap-8">
                             {integrations.slice(0, 4).map((integration) => (
-                                <div key={integration.name} className="flex flex-col items-center text-center">
+                                <div key={integration.name} className="flex flex-col items-center text-center w-24 h-24">
                                     <Image src={integration.icon} alt={integration.name} width={96} height={96} />
                                 </div>
                             ))}
                         </div>
                         <div className="grid grid-cols-3 gap-8 mt-8">
                             {integrations.slice(4).map((integration) => (
-                                <div key={integration.name} className="flex flex-col items-center text-center">
+                                <div key={integration.name} className="flex flex-col items-center text-center w-24 h-24">
                                     <Image src={integration.icon} alt={integration.name} width={96} height={96} />
                                 </div>
                             ))}

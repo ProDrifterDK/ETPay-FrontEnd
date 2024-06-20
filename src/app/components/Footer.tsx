@@ -13,8 +13,8 @@ const Footer: React.FC = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex justify-between text-sm text-gray-400">
-                    <span>© RegiM 2022. Made with love by Landify.</span>
+                <div className="flex flex-col sm:flex-row sm:justify-between text-sm text-gray-400">
+                    <span className="mb-4 sm:mb-0">© RegiM 2022. Made with love by Landify.</span>
                     <span>
                         For further details, drop a mail to
                         <a href="mailto:hello@landify.design" className="text-white"> hello@landify.design</a>
