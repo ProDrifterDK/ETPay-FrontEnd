@@ -1,7 +1,14 @@
+'use client'
+
 import React from 'react';
-import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 const CTASection: React.FC = () => {
+    const router = useRouter();
+    const handleGetEarlyAccess = () => {
+        router.push('/register');
+    };
+
     return (
         <section className="bg-neutral-900 text-white py-24">
             <div className="container mx-auto text-center p-12 lg:px-48 rounded-lg">
@@ -10,9 +17,13 @@ const CTASection: React.FC = () => {
                     Leveraging our virtual and live event experience, Hubilo offers everything you need to set up your
                     next hybrid event from registration to executing a flawless event.
                 </p>
-                <Link href="/early-access" legacyBehavior>
-                    <a className="bg-primary-600 text-white px-6 py-3 rounded-md text-lg font-medium relative z-20">Get Early Access</a>
-                </Link>
+                <button
+                    type="button"
+                    onClick={handleGetEarlyAccess}
+                    className="bg-primary-600 text-white px-6 py-3 rounded-md text-lg font-medium relative z-20"
+                >
+                    Get Early Access
+                </button>
             </div>
         </section>
     );

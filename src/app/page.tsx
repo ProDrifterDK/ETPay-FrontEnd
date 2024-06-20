@@ -4,7 +4,7 @@ import FeaturesSection from './components/FeaturesSection';
 import IntegrationsSection from './components/IntegrationsSection';
 import CTASection from './components/CTASection';
 import Footer from './components/Footer';
-import AnimatedSection from './components/AnimatedSection';
+import AnimatedSection from './components/utils/AnimatedSection';
 
 export default function Home() {
   return (
