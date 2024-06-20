@@ -11,7 +11,14 @@ export default function Home() {
     <>
       <div className="relative overflow-hidden">
         <AnimatedSection>
-          <div className="absolute top-[-250px] left-[1050px] w-[950px] h-[950px] bg-cyan-100 rounded-full opacity-100"></div>
+          <div
+            className="absolute top-[13.5%] left-[20%] w-[400px] h-[400px] bg-cyan-100 rounded-full opacity-100
+                          xl:top-[-250px] xl:left-[1050px] xl:w-[950px] xl:h-[950px]
+                          lg:top-[-200px] lg:left-[800px] lg:w-[750px] lg:h-[750px] 
+                          md:top-[12%] md:left-[20%] md:w-[700px] md:h-[700px] 
+                          sm:top-[-100px] sm:left-[400px] sm:w-[350px] sm:h-[350px]"
+          >
+          </div>
           <Header />
         </AnimatedSection>
         <main className="bg-white">
